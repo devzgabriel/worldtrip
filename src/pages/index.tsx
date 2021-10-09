@@ -1,4 +1,6 @@
+import { Flex } from '@chakra-ui/react'
 import Head from 'next/head'
+import { Header } from '../components/Header'
 
 export default function Home() {
   return (
@@ -8,7 +10,9 @@ export default function Home() {
         <meta name='description' content='Your platform to travel' />
         <link rel='icon' href='/favicon.svg' />
       </Head>
-      <h1>World Trip</h1>
+      <Flex direction='column' h='100vh' w='100vw' align='center'>
+        <Header />
+      </Flex>
     </div>
   )
 }
