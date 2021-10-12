@@ -1,4 +1,4 @@
-import { Flex, Link, Image, Text, Icon, IconButton } from '@chakra-ui/react'
+import { Flex, Icon, IconButton, Image, Link } from '@chakra-ui/react'
 import { FiArrowLeft } from 'react-icons/fi'
 
 export function Header({ goBackButton = false }: { goBackButton?: boolean }) {

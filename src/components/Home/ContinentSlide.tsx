@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 import { Box, Flex, HStack, Image, Stack, Text, theme } from '@chakra-ui/react'
-import { slides } from '../../utils/slides'
+import { slides } from '../../utils/data'
 
-export function ContinentSlide() {
+export function ContinentSlide({
+  handleClickSlide,
+}: {
+  handleClickSlide: (slug: string) => void
+}) {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const slidesCount = slides.length
@@ -46,12 +50,20 @@ export function ContinentSlide() {
       <Flex w='full' pos='relative' overflow='hidden' borderRadius='6px'>
         <Flex h={600} w='full' {...carouselStyle} bg='black'>
           {slides.map((slide, index) => (
-            <Box key={index} boxSize='full' shadow='md' flex='none' bg='black'>
+            <Box
+              key={index}
+              boxSize='full'
+              shadow='md'
+              flex='none'
+              bg='black'
+              onClick={() => handleClickSlide(slide.slug)}
+              cursor='pointer'
+            >
               <Image
                 src={slide.img}
                 alt={slide.label}
                 boxSize='full'
-                backgroundSize='cover'
+                objectFit='cover'
                 opacity='0.5'
                 width='full'
                 height='full'
@@ -66,7 +78,7 @@ export function ContinentSlide() {
                 <Text fontSize='5xl' fontWeight='bold'>
                   {slide.label}
                 </Text>
-                <Text fontSize='xl'>{slide.description}</Text>
+                <Text fontSize='xl'>{slide.subtitle}</Text>
               </Stack>
             </Box>
           ))}

@@ -4,48 +4,43 @@ export function TopicIcons() {
   return (
     <Flex direction='row' w={1000} align='center' justify='space-around'>
       <Stack spacing={6} direction='column' align='center'>
-        <Image
-          src='/assets/icons/drink.svg'
-          layout='fill'
-          alt='vida noturna'
-          w={70}
-        />
+        <Image src='/assets/icons/drink.svg' layout='fill' alt='night' w={70} />
         <Text fontSize='xl' color='grey' fontWeight='bold'>
-          vida noturna
+          night
         </Text>
       </Stack>
       <Stack spacing={6} direction='column' align='center'>
-        <Image src='/assets/icons/surf.svg' layout='fill' alt='praia' w={70} />
+        <Image src='/assets/icons/surf.svg' layout='fill' alt='fun' w={70} />
         <Text fontSize='xl' color='grey' fontWeight='bold'>
-          praia
+          fun
         </Text>
       </Stack>
       <Stack spacing={6} direction='column' align='center'>
         <Image
           src='/assets/icons/building.svg'
           layout='fill'
-          alt='moderno'
+          alt='modern'
           w={70}
         />
         <Text fontSize='xl' color='grey' fontWeight='bold'>
-          moderno
+          modern
         </Text>
       </Stack>
       <Stack spacing={6} direction='column' align='center'>
         <Image
           src='/assets/icons/museum.svg'
           layout='fill'
-          alt='clássico'
+          alt='classic'
           w={70}
         />
         <Text fontSize='xl' color='grey' fontWeight='bold'>
-          clássico
+          classic
         </Text>
       </Stack>
       <Stack spacing={6} direction='column' align='center'>
         <Image src='/assets/icons/world.svg' layout='fill' alt='world' w={70} />
         <Text fontSize='xl' color='grey' fontWeight='bold'>
-          e mais...
+          and more places...
         </Text>
       </Stack>
     </Flex>

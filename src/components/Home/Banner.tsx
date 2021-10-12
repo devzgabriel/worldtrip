@@ -15,11 +15,13 @@ export function Banner() {
     >
       <Flex direction='column'>
         <Text fontSize='5xl' fontWeight='bold' color='white'>
-          5 Continentes,
-          <br /> infinitas possibilidades.
+          5 Continents,
+          <br /> infinitely possibilities.
         </Text>
-        <Text fontSize='xl' color='white'>
-          Chegou a hora de tirar do papel a viagem que você sempre sonhou.{' '}
+        <Text fontSize='xl' color='white' mt={5}>
+          Explore the world of travel and discover new adventures. <br />
+          It&apos;s time to take the trip you&apos;ve always dreamed of on
+          paper.
         </Text>
       </Flex>
 

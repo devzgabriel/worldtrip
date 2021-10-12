@@ -1,5 +1,6 @@
-import { Flex, Text, Image, Box, Stack } from '@chakra-ui/react'
+import { Box, Flex, Stack, Text } from '@chakra-ui/react'
 import Head from 'next/head'
+import Router from 'next/router'
 import React from 'react'
 import { Header } from '../components/Header'
 import { Banner } from '../components/Home/Banner'
@@ -23,12 +24,14 @@ export default function Home() {
           <Box bg='grey' w={20} h={1} borderRadius={6} />
 
           <Text fontSize='5xl' color='grey' align='center'>
-            Vamos nessa?
+            Here we go?
             <br />
-            Então escolha seu continente
+            So choose your continent
           </Text>
 
-          <ContinentSlide />
+          <ContinentSlide
+            handleClickSlide={(slug) => Router.push(`/continent/${slug}`)}
+          />
         </Stack>
       </Flex>
     </div>
