@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <Flex direction='column' h='100vh' w='100vw' align='center'>
         <Header />
-        <Stack w='100%' align='center' spacing={20}>
+        <Stack w='100%' align='center' spacing={20} pb={10}>
           <Banner />
           <TopicIcons />
 
